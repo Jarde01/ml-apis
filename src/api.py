@@ -1,7 +1,10 @@
-import hello
 import hug
 from bottle import run
 import jwt
+
+from handlers import hello, transformer_controller
+
+
 authentication = hug.authentication.basic(
     hug.authentication.verify("joe", "pwd"))
 
@@ -77,7 +80,7 @@ def with_other_apis():
     generated from function names.
     """
 
-    return [hello]
+    return [hello, transformer_controller]
 
 
 if __name__ == "__main__":

@@ -4,9 +4,11 @@
 
 Debug:
 
-```bash
+<!-- ```bash
 sh run_server.sh --debug
-```
+``` -->
+
+python .\api.py
 
 Production:
 
